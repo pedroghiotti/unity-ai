@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637892917421069963
-    m_Hash: 4179566897
+      ticks: 637898895678021074
+    m_Hash: 1518922824
   m_LockFileStatus:
     m_FilePath: C:/Users/aluno/Desktop/FACENS_OHATA_IA/IA_Flocking/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637892917509494911
-    m_Hash: 4197502262
+      ticks: 637898895678041080
+    m_Hash: 3317231064
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
