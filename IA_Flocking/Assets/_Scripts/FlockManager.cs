@@ -8,6 +8,7 @@ public class FlockManager : MonoBehaviour
     public int numFish = 20;
     public GameObject[] allFish;
     public Vector3 swimLimits = new Vector3(5, 5, 5);
+    public Vector3 goalPos;
 
     [Header("Configurações do Cardume")]
     [Range(0, 5f)]  public float minSpeed;
@@ -35,6 +36,23 @@ public class FlockManager : MonoBehaviour
 
             allFish[i] = (GameObject)Instantiate(fishPrefab, pos, Quaternion.identity);
             allFish[i].GetComponent<Flock>().flockManager = this;
+        }
+    }
+
+    private void Update()
+    {
+        // Posição em volta da qual o cardume circula
+        goalPos = this.transform.position;
+
+        // Introduz variação na 'goalPos'
+        if (Random.Range(0, 100) < 10)
+        {
+            goalPos = this.transform.position + new Vector3
+            (
+                Random.Range(-swimLimits.x, swimLimits.x),
+                Random.Range(-swimLimits.y, swimLimits.y),
+                Random.Range(-swimLimits.z, swimLimits.z)
+            );
         }
     }
 }
